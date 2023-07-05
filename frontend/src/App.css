@@ -1,0 +1,109 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 60%;
+  margin: 0 auto;
+  gap: 8px;
+}
+.error {
+  font-size: 0.8461rem;
+  text-align: right;
+  line-height: 15px;
+  min-height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(198, 66, 82);
+  font-style: normal;
+}
+
+.form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px;
+}
+
+.form button, button.submit, nav ul li button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.cancel {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form button:hover {
+  background-color: #555;
+}
+
+.form button:disabled {
+  background-color: #e0dada;
+}
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.input-container label,
+.input-container input,
+.input-container select {
+  flex: 1 1 100%;
+  width: 100%;
+  gap: 8px;
+}
+.input-container input,
+.input-container select {
+  padding: 12px 16px;
+  width: 100%;
+}
+.form .error {
+  margin: 0;
+  padding: 8px 0;
+  color: red;
+}
